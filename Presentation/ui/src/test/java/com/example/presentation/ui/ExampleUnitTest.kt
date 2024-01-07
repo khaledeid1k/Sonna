@@ -1,4 +1,4 @@
-package com.example.Presentation.ui
+package com.example.presentation.ui
 
 import org.junit.Test
 
