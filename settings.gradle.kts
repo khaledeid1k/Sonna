@@ -16,7 +16,7 @@ dependencyResolutionManagement {
 rootProject.name = "Sonna"
 include(":app")
 include(":Presentation:ui")
-include(":Presentation:viewmodel")
+include(":Presentation:viewmodels")
 include(":data:remote")
 include(":data:local")
 include(":data:repo")
