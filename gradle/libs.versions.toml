@@ -10,6 +10,8 @@ activity-compose = "1.8.2"
 compose-bom = "2023.03.00"
 appcompat = "1.6.1"
 material = "1.11.0"
+hilt_compose="1.1.0"
+daggerHilt= "2.44"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,9 +30,15 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+hiltCompiler= { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHilt" }
+hilt= { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+hiltCompose= { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt_compose" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+
 
