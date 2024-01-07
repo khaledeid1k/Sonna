@@ -6,12 +6,11 @@ plugins {
 
 android {
     namespace = "com.example.Presentation.ui"
-    compileSdk = 34
+    compileSdk = ConfigData.compileSdkVersion
 
     defaultConfig {
-        minSdk = 24
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        minSdk = ConfigData.minSdkVersion
+        testInstrumentationRunner = ConfigData.TEST_INSTRUMENTATION_RUNNER
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -25,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = ConfigData.JAVA_VERSIONS_CODE
+        targetCompatibility = ConfigData.JAVA_VERSIONS_CODE
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget =  ConfigData.JAVA_VERSIONS_CODE.toString()
     }
     buildFeatures {
         compose = true
